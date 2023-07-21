@@ -1,0 +1,76 @@
+.mySwiper {
+}
+.box {
+  padding: 48px 24px 64px 24px;
+
+  background: var(--apple-grey, #f5f5f7);
+}
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.title_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.left {
+  border: unset;
+  background-color: unset;
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+}
+.right {
+  border: unset;
+  background-color: unset;
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+}
+.right svg,
+.left svg {
+  width: 40px;
+  height: 40px;
+}
+.left svg path,
+.right svg path {
+  stroke: #020105;
+}
+.left:hover svg path {
+  stroke: #fd8c05;
+}
+.right:hover svg path {
+  stroke: #fd8c05;
+}
+/* .left > svg > path,
+.right > svg > path {
+  stroke: black !important;
+} */
+.left svg {
+  transform: rotate(180deg);
+}
+@media (max-width: 880px) {
+  .navigation {
+    display: none;
+  }
+  .box {
+    padding: 0;
+    border: unset;
+  }
+
+  .title {
+    padding-left: 16px;
+  }
+}

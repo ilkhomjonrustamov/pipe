@@ -1,0 +1,38 @@
+import { chevron_right } from "@/public/icons";
+import styles from "./about_company.module.css";
+import Image from "next/image";
+export default function AboutCompany() {
+  return (
+    <section className={styles.box}>
+      <div className={styles.container}>
+        <div className={styles.info_section}>
+          <p className={`${styles.section_title} section_title`}>О компании</p>
+          <div className={styles.descs}>
+            <p className={styles.desc}>
+              Компания Premium pipe Asia polyplast является ведущим
+              производителем полипропиленовых, полиэтиленовых и ПВХ
+              трубопроводов для внутренних и наружных сетей инженерных
+              коммуникаций.
+            </p>
+            <p className={styles.desc}>
+              Наша продукция отличается высоким качеством, надежностью и
+              долговечностью. Благодаря передовым технологиям и
+              профессиональному опыту, компания успешно удовлетворяет
+              потребности клиентов в различных отраслях. Она стремится к
+              инновациям и устанавливает высокие стандарты в своей отрасли.
+            </p>
+          </div>
+          <button className="primary_btn">Подробнее {chevron_right}</button>
+        </div>
+        <div className={styles.image}>
+          <Image
+            src={"/media/about_pic.png"}
+            width={828}
+            height={488}
+            alt="about image"
+          />
+        </div>
+      </div>
+    </section>
+  );
+}

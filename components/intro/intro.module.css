@@ -1,0 +1,37 @@
+.topper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.subtitle {
+  color: var(--grey-64, #5d5d5f);
+  font-family: var(--halvar-bold);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 17.6px */
+  text-transform: uppercase;
+}
+.title {
+  color: var(--black, #020105);
+  font-family: var(--halvar-medium);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 44px */
+  text-transform: uppercase;
+}
+.middle {
+}
+.middle_subtitle {
+  color: var(--white, #fff);
+
+  /* Title 2/Regular */
+  font-family: var(--interface);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}

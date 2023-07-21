@@ -1,3 +1,60 @@
+@font-face {
+  font-family: "Interface-Regular";
+  src: url("../public/fonts/interface/TTInterfaces-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Interface-Medium";
+  src: url("../public/fonts/interface/TTInterfaces-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Interface-Semibold";
+  src: url("../public/fonts/interface/TTInterfaces-SemiBold.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "Interface-Bold";
+  src: url("../public/fonts/interface/TTInterfaces-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Interface-Black";
+  src: url("../public/fonts/interface/TTInterfaces-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "H-Regular";
+  src: url("../public/fonts/halvar/HalvarBreit-Rg.woff") format("woff");
+}
+
+@font-face {
+  font-family: "H-Medium";
+  src: url("../public/fonts/halvar/HalvarBreit-Md.woff") format("woff");
+}
+@font-face {
+  font-family: "H-Bold";
+  src: url("../public/fonts/halvar/HalvarBreit-Bd.woff") format("woff");
+}
+@font-face {
+  font-family: "H-Extrabold";
+  src: url("../public/fonts/halvar/HalvarBreit-XBd.woff") format("woff");
+}
+@font-face {
+  font-family: "H-Black";
+  src: url("../public/fonts/halvar/HalvarBreit-Blk.woff") format("woff");
+}
+:root {
+  --interface: "Interface-Regular";
+  --interface-medium: "Interface-Medium";
+  --interface-semibold: "Interface-Semibold";
+  --interface-bold: "Interface-Bold";
+  --interface-black: "Interface-Black";
+  --halvar: "H-Regular";
+  --halvar-medium: "H-Medium";
+  --halvar-bold: "H-Bold";
+  --halvar-extrabold: "H-Extrabold";
+  --halvar-black: "H-Black";
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,8 +69,62 @@ body {
 
 body {
 }
-
+.section_title_2 {
+  color: var(--white, #fff);
+  font-family: var(--halvar-medium);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 44px */
+  text-transform: uppercase;
+}
+main {
+  padding-top: 200px;
+}
 a {
   color: inherit;
   text-decoration: none;
+}
+.section_title {
+  color: var(--black, #020105);
+  font-family: var(--halvar-black);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 112%; /* 35.84px */
+  text-transform: uppercase;
+}
+.link {
+  color: #fd8c05;
+
+  /* Title 2/Medium */
+  font-family: var(--interface-medium);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.primary_btn {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: var(--halvar-bold);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 18.2px */
+  text-transform: uppercase;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: #fd8c05;
+  border: unset;
 }
