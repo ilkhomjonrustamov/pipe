@@ -111,7 +111,7 @@
 .phone:hover,
 .email:hover,
 .contact_info:hover {
-  color: #fd8c05;
+  color: var(--green);
 }
 .btm_container {
   display: flex;
@@ -157,7 +157,7 @@
   line-height: 150%; /* 27px */
 }
 .designedby > a {
-  color: #fd8c05;
+  color: var(--green);
 }
 @media (ma-width: 1440px) {
   .container {

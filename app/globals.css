@@ -43,6 +43,10 @@
   font-family: "H-Black";
   src: url("../public/fonts/halvar/HalvarBreit-Blk.woff") format("woff");
 }
+@font-face {
+  font-family: "SFPro-Regular";
+  src: url("../public/fonts/sfpro/SF-Pro-Display-Regular.woff") format("woff");
+}
 :root {
   --interface: "Interface-Regular";
   --interface-medium: "Interface-Medium";
@@ -54,6 +58,10 @@
   --halvar-bold: "H-Bold";
   --halvar-extrabold: "H-Extrabold";
   --halvar-black: "H-Black";
+  --sfpro: "SFPro-Regular";
+  --green: #4eb848;
+  --black: #020105;
+  --white: #fff;
 }
 * {
   box-sizing: border-box;
@@ -95,7 +103,7 @@ a {
   text-transform: uppercase;
 }
 .link {
-  color: #fd8c05;
+  color: var(--green);
 
   /* Title 2/Medium */
   font-family: var(--interface-medium);
@@ -125,6 +133,24 @@ a {
   gap: 8px;
   flex-shrink: 0;
   border-radius: 40px;
-  background: #fd8c05;
+  background: var(--green);
   border: unset;
+}
+.order_btn {
+  border-radius: 39px;
+  background: #4eb848;
+  display: flex;
+  padding: 16px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--white, #fff);
+  font-family: var(--halvar-bold);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+  border: unset;
+  cursor: pointer;
 }

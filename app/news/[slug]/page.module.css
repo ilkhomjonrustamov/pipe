@@ -1,0 +1,112 @@
+.container {
+  padding: 80px 0 120px 0;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 284px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid #ebebeb;
+}
+.title {
+  color: var(--black, #020105);
+  font-family: var(--halvar-extrabold);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.enter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+  padding: 24px 0;
+}
+.publishedday {
+  color: var(--grey-40, #9a999b);
+  font-family: var(--interface);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.watched {
+  color: var(--grey-40, #9a999b);
+  font-family: var(--interface);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.desc {
+  color: var(--black, #020105);
+
+  /* Title 2/Regular */
+  font-family: var(--interface);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  padding-top: 40px;
+}
+.other_news {
+  padding-top: 80px;
+}
+.title_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.left,
+.right {
+  border-radius: 51px;
+  border: 1px solid var(--grey-8, #ebebeb);
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 8px;
+  background: unset;
+  cursor: pointer;
+}
+.left svg,
+.right svg {
+  width: 40px;
+  height: 40px;
+}
+.left svg path,
+.right svg path {
+  stroke: var(--black);
+}
+
+.left {
+  transform: rotate(180deg);
+}
+.cont {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+.mySwiper {
+  overflow: visible !important;
+}

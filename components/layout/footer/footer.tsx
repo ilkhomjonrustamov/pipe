@@ -44,6 +44,14 @@ export default function Footer() {
               >
                 +998 78 122 12 42
               </a>
+              <a
+                href={`tel: `}
+                target={"_blank"}
+                rel="noreferrer"
+                className={styles.phone}
+              >
+                +998 78 122 12 42
+              </a>
             </div>
             <div className={styles.contact}>
               <p className={styles.contact_title}>Email</p>

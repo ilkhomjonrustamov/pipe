@@ -3,6 +3,7 @@ import {
   bag,
   chevron_down,
   gmail,
+  location,
   phone,
   search,
 } from "@/public/icons";
@@ -16,8 +17,11 @@ export function Header() {
         <div className={styles.top_cont}>
           <div className={styles.top}>
             <div className={styles.city}>
-              <p className={styles.city_title}>Город:</p>
-              <p className={styles.city_name}>Ташкент</p>
+              <p className={styles.city_name}>
+                {location}
+                Тошкент вилояти, Охангарон шахар, Ангрен Эркин Иктисодий зонаси
+                Бирлик МФЙ, 40-уй
+              </p>
             </div>
             <div className={styles.contacts_cont}>
               <div className={styles.contacts}>
@@ -60,28 +64,33 @@ export function Header() {
               <Link href={"/"} className={styles.nav_link}>
                 Главная
               </Link>
-              <Link href={"/"} className={styles.nav_link}>
+              <Link href={"/products"} className={styles.nav_link}>
                 Пpoдукции {chevron_down}
               </Link>
-              <Link href={"/"} className={styles.nav_link}>
+              <Link href={"/about"} className={styles.nav_link}>
                 О компании
               </Link>
-              <Link href={"/"} className={styles.nav_link}>
+              <Link href={"/news"} className={styles.nav_link}>
                 Новости
               </Link>
-              <Link href={"/"} className={styles.nav_link}>
+              <Link href={"/gallery"} className={styles.nav_link}>
+                Галерея
+              </Link>
+              <Link href={"/contacts"} className={styles.nav_link}>
                 Контакты
               </Link>
             </div>
           </div>
           <div className={styles.btm_right}>
-            <input
-              type="text"
-              placeholder={`Поиск `}
-              className={styles.search}
-            />
+            <Link href={"/search"}>
+              <input
+                type="text"
+                placeholder={`Поиск `}
+                className={styles.search}
+              />
+            </Link>
 
-            <Link href={"/"} className={styles.cart}>
+            <Link href={"/cart"} className={styles.cart}>
               {bag} Корзина
             </Link>
           </div>

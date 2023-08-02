@@ -22,12 +22,16 @@
   line-height: 150%;
 }
 .city_name {
-  color: #fd8c05;
+  color: var(--grey-64, #5d5d5f);
   font-family: var(--interface-medium);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 150%; /* 24px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 .contacts_cont {
   display: flex;
@@ -75,7 +79,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: #fd8c05;
+  color: var(--green);
 
   /* Body 1/Semibold */
   font-family: var(--interface-semibold);
@@ -88,9 +92,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%; */
   max-width: 1680px;
   margin: 0 auto;
   padding: 16px 16px;
+  border-bottom: 1px solid #f5f5f7;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }
 .btm_left {
   display: flex;

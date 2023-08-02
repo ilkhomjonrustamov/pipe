@@ -6,17 +6,20 @@ import AboutCompany from "@/components/home/about_company/about_company";
 import Catalog from "@/components/catalog/catalog";
 import Products from "@/components/home/products/products";
 import Partners from "@/components/partners/partners";
-// import Intro from "@/components/intro/intro";
+import Gallery from "@/components/gallery/gallery";
+import Intro from "@/components/intro/intro";
+import ContactsHome from "@/components/contacts/contacts";
 
 export default function Home() {
   return (
     <>
-      {/* <Intro /> */}
+      <Intro />
       <AboutCompany />
       <Catalog />
       <Products />
+      <Gallery />
       <Partners />
-      <Contacts />
+      <ContactsHome />
     </>
   );
 }

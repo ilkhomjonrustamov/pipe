@@ -32,7 +32,7 @@
   height: 250px;
   overflow: hidden;
 }
-.images image {
+.image {
   width: 100%;
   object-fit: contain;
   transition: all 0.2s ease 0.1s;
@@ -50,7 +50,7 @@
   font-weight: 800;
   line-height: 150%; /* 24px */
   text-transform: uppercase;
-  width: 354px;
+  max-width: 354px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ebebeb;
 }
@@ -75,10 +75,10 @@
 }
 
 .product_container:hover .product_link {
-  color: #fd8c05;
+  color: var(--green);
 }
 .product_container:hover .product_link svg path {
-  stroke: #fd8c05;
+  stroke: var(--green);
 }
 .product_container:hover .product_link svg {
   transform: rotateZ(-45deg);

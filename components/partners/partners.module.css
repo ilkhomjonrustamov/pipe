@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 .left {
   border: unset;
@@ -49,10 +49,10 @@
   stroke: #020105;
 }
 .left:hover svg path {
-  stroke: #fd8c05;
+  stroke: var(--green);
 }
 .right:hover svg path {
-  stroke: #fd8c05;
+  stroke: var(--green);
 }
 /* .left > svg > path,
 .right > svg > path {

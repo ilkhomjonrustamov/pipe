@@ -6,7 +6,7 @@ import { useState } from "react";
 import axios from "axios";
 import { chevron_right } from "@/public/icons";
 
-export default function Contacts() {
+export default function ContactsHome() {
   //   const [number, setNumber] = useState("");
   //   const [name, setName] = useState("");
   //   const [isSuccess, setIsSuccess] = useState(false);

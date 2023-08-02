@@ -1,9 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.top_container {
+  /* background-repeat: no-repeat;
+  background-image: url("../../public/media/intro_top_back.png");
+  background-size: cover; */
+  padding-top: 90px;
+  display: flex;
+
+  position: relative;
+}
+.top_container .image {
+  position: absolute;
+  top: 0px;
+  left: auto;
+  right: 0;
+  width: 100%;
+  object-fit: fill;
+  height: 100%;
+}
 .topper {
   display: flex;
   flex-direction: column;
   max-width: 1680px;
   margin: 0 auto;
   padding: 0 16px;
+  width: 100%;
+  margin-bottom: 24px;
+  gap: 16px;
 }
 .subtitle {
   color: var(--grey-64, #5d5d5f);
@@ -13,6 +38,10 @@
   font-weight: 700;
   line-height: 110%; /* 17.6px */
   text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
 }
 .title {
   color: var(--black, #020105);
@@ -22,8 +51,33 @@
   font-weight: 500;
   line-height: 110%; /* 44px */
   text-transform: uppercase;
+  width: 1018px;
 }
 .middle {
+  width: 100%;
+  height: 560px;
+  position: relative;
+}
+.video_container {
+  height: 560px;
+}
+.video {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+}
+.middle_info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 22;
+  margin-left: 120px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  justify-content: center;
 }
 .middle_subtitle {
   color: var(--white, #fff);
@@ -34,4 +88,47 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 27px */
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1516px;
+  padding: 37px 0 37px 120px;
+  background: #4eb848;
+  transform: translateY(-64px);
+  z-index: 23;
+}
+.success_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 40px;
+}
+.success_title_top {
+  color: var(--white, #fff);
+  font-family: var(--halvar-extrabold);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 36px */
+  text-transform: uppercase;
+}
+.success_title {
+  color: var(--white, #fff);
+  font-family: var(--interface-medium);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  width: 229px;
+}
+.success:nth-child(2) {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
 }

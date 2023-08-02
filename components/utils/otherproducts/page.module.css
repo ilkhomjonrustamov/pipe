@@ -1,0 +1,44 @@
+.other_news {
+}
+.title_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.left,
+.right {
+  border-radius: 51px;
+  border: 1px solid var(--grey-8, #ebebeb);
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 8px;
+  background: unset;
+  cursor: pointer;
+}
+.left svg,
+.right svg {
+  width: 40px;
+  height: 40px;
+}
+.left svg path,
+.right svg path {
+  stroke: var(--black);
+}
+
+.left {
+  transform: rotate(180deg);
+}
+.cont {
+  max-width: 1680px;
+  margin: 0 auto;
+}
