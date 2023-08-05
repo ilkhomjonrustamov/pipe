@@ -1,3 +1,4 @@
+"use client";
 import {
   arrow_down,
   bag,
@@ -10,9 +11,11 @@ import {
 import styles from "./header.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 export function Header() {
+  const [isMenu, setIsMenu] = useState(false);
   return (
-    <section>
+    <section className={styles.box}>
       <div className={styles.container}>
         <div className={styles.top_cont}>
           <div className={styles.top}>
@@ -52,13 +55,15 @@ export function Header() {
         <div className={styles.btm}>
           <div className={styles.btm_left}>
             <div className={styles.img_cont}>
-              <Image
-                src={"/media/logo.png"}
-                width={140}
-                height={56}
-                alt="logo of the company"
-                className={styles.img}
-              />
+              <Link href={"/"}>
+                <Image
+                  src={"/media/logo.png"}
+                  width={140}
+                  height={56}
+                  alt="logo of the company"
+                  className={styles.img}
+                />
+              </Link>
             </div>
             <div className={styles.nav_links}>
               <Link href={"/"} className={styles.nav_link}>
@@ -93,6 +98,41 @@ export function Header() {
             <Link href={"/cart"} className={styles.cart}>
               {bag} Корзина
             </Link>
+          </div>
+        </div>
+      </div>
+      <div className={styles.mobile}>
+        <div className={styles.mobile_top}>
+          <div className={styles.img_cont}>
+            <Link href={"/"}>
+              <Image
+                src={"/media/logo.png"}
+                width={140}
+                height={56}
+                alt="logo of the company"
+                className={styles.img}
+              />
+            </Link>
+          </div>
+          <div>
+            <p className={styles.mobile_lng}> Рус {chevron_down} </p>
+          </div>
+        </div>
+        <div className={styles.mobile_bottom}>
+          <Link href={"/search"} className={styles.search_bar}>
+            <input
+              type="text"
+              placeholder={`Поиск `}
+              className={styles.search}
+            />
+          </Link>
+          <div
+            className={`${styles.hamburger} ${isMenu ? styles.open : null}`}
+            onClick={() => setIsMenu(!isMenu)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>

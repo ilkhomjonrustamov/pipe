@@ -43,6 +43,7 @@ export default function About() {
                 width={178}
                 height={70}
                 alt="logo"
+                className={styles.img}
               />
             </div>
             <div className={styles.info}>

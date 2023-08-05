@@ -6,10 +6,10 @@ import ProductCard from "@/components/cards/productCard/productCard";
 export default function Products() {
   return (
     <section>
-      <div className={styles.container}>
+      <div className={`${styles.container} box`}>
         <div className={styles.title_section}>
           <p className="section_title">Популярные продукты</p>
-          <Link href={"/"} className="link">
+          <Link href={"/"} className={`${styles.link} link`}>
             Узнать больше {arrow_right}
           </Link>
         </div>

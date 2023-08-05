@@ -8,12 +8,13 @@ export default function CatalogCard() {
       <p className={styles.catalog_title}>Полипропиленовые трубы/композиты</p>
       {elbow_right}
       <div className={styles.ellipse}></div>
-      <div className={styles.image}>
+      <div className={styles.images}>
         <Image
           src={"/media/catalog.png"}
           width={220}
           height={190}
           alt="catalog"
+          className={styles.image}
         />
       </div>
     </Link>

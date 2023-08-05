@@ -91,9 +91,14 @@ export default function Footer() {
               Контакты
             </Link>
           </div>
-          <p className={styles.designedby}>
-            Design by <Link href={"/"}>NDC</Link>
-          </p>
+          <div className={styles.btm_mb}>
+            <p className={styles.copyright_mobile}>
+              Copyright © 2023 Premium Pipe Asia
+            </p>
+            <p className={styles.designedby}>
+              Design by <Link href={"/"}>NDC</Link>
+            </p>
+          </div>
         </div>
       </div>
     </section>

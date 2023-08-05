@@ -11,7 +11,7 @@ export default function CatalogPage() {
         link={"/catalog"}
         link_name={"Продукции"}
       />
-      <div className={styles.catalogs}>
+      <div className={`${styles.catalogs} box`}>
         <CatalogCard />
         <CatalogCard />
         <CatalogCard />

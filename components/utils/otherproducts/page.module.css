@@ -42,3 +42,15 @@
   max-width: 1680px;
   margin: 0 auto;
 }
+@media (max-width: 1600px) {
+  .other_news {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 768px) {
+  .left svg,
+  .right svg {
+    width: 20px;
+    height: 20px;
+  }
+}

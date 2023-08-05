@@ -16,7 +16,7 @@ export default function Home() {
       <Intro />
       <AboutCompany />
       <Catalog />
-      <Products />
+      {/* <Products /> */}
       <Gallery />
       <Partners />
       <ContactsHome />

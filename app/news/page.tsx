@@ -7,7 +7,7 @@ export default function News() {
   return (
     <section>
       <TopIntro title={"Наши новости"} link={"/news"} link_name={"Новости"} />
-      <div className={styles.container}>
+      <div className={`${styles.container} container`}>
         <NewsCard />
         <NewsCard />
         <NewsCard />

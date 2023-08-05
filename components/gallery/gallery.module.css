@@ -1,8 +1,6 @@
 .mySwiper {
 }
-.box {
-  padding: 120px 0;
-}
+
 .container {
   max-width: 1680px;
   margin: 0 auto;
@@ -62,7 +60,7 @@
 .gallery_card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+
   justify-content: space-between;
   border: 1px solid var(--grey-8, #ebebeb);
   background: var(--white, #fff);
@@ -73,9 +71,10 @@
 .gallery_image {
   overflow: hidden;
 }
-.gallery_image image {
+.image {
   transition: 0.2s;
   object-fit: cover;
+  width: 100%;
 }
 
 .gallery_title {
@@ -89,15 +88,35 @@
   padding: 24px;
 }
 @media (max-width: 880px) {
-  .navigation {
-    display: none;
+  .container {
+    padding-bottom: 56px;
   }
-  .box {
+  .navigation {
+    display: flex;
+  }
+  .left,
+  .right {
+    width: 20px;
+    height: 20px;
+  }
+  .left svg,
+  .right svg {
+    width: 20px;
+    height: 20px;
+  }
+  .container {
+    gap: 18px;
+  }
+  /* .box {
     padding: 0;
     border: unset;
-  }
+  } */
 
   .title {
     padding-left: 16px;
+  }
+  .gallery_title {
+    font-size: 14px;
+    padding: 20px 16px 24px 24px;
   }
 }

@@ -42,13 +42,13 @@ export default function OtherProducts() {
             modules={[Autoplay, Pagination, Navigation]}
             breakpoints={{
               0: {
-                slidesPerView: 1.5,
+                slidesPerView: 1.1,
                 spaceBetween: 0,
                 centeredSlides: true,
                 pagination: true,
               },
-              768: { slidesPerView: 3 },
-              1024: { slidesPerView: 4, pagination: false },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3, pagination: false },
               1440: { slidesPerView: 4 },
               // 1300: { pagination: false },
             }}

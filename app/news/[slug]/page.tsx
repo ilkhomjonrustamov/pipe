@@ -16,7 +16,7 @@ export default function InnerNews() {
   const [prevEl, setPrevEl] = useState(null);
   const [nextEl, setNextEl] = useState(null);
   return (
-    <section className={styles.container}>
+    <section className="box">
       <div className={styles.box}>
         <p className={styles.title}>
           ЕТБга аъзолик эҳтимоли, Ўзбекистонга келаётган Mastercard ва Exeed —
@@ -105,14 +105,15 @@ export default function InnerNews() {
             modules={[Autoplay, Pagination, Navigation]}
             breakpoints={{
               0: {
-                slidesPerView: 1.5,
+                slidesPerView: 1.2,
                 spaceBetween: 0,
                 centeredSlides: true,
                 pagination: true,
               },
-              768: { slidesPerView: 3 },
-              1024: { slidesPerView: 4, pagination: false },
-              1440: { slidesPerView: 4.5 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3, pagination: false },
+              1440: { slidesPerView: 3 },
+              1500: { slidesPerView: 4 },
               // 1300: { pagination: false },
             }}
             spaceBetween={24}

@@ -6,11 +6,11 @@ export default function Products() {
     <section>
       <div>
         <ProductsIntro />
-        <div className={styles.product_containers}>
+        <div className={`${styles.product_containers} container`}>
           <div className={styles.categories}>
             <p className={styles.title}>Категории</p>
             <div className={styles.category_container}>
-              <p className={styles.category}>Полипропиленовые фитинги</p>{" "}
+              <p className={styles.category}>Полипропиленовыsе фитинги</p>{" "}
               <p className={styles.category}>
                 Двухслойные гофрированные трубы с раструбом
               </p>

@@ -22,16 +22,22 @@ export default function AboutCompany() {
               инновациям и устанавливает высокие стандарты в своей отрасли.
             </p>
           </div>
-          <button className="primary_btn">Подробнее {chevron_right}</button>
+          <button className={`primary_btn ${styles.btn}`}>
+            Подробнее {chevron_right}
+          </button>
         </div>
-        <div className={styles.image}>
+        <div className={styles.images}>
           <Image
             src={"/media/about_pic.png"}
             width={828}
             height={488}
             alt="about image"
+            className={styles.image}
           />
         </div>
+        <button className={`primary_btn ${styles.mobile_btn}`}>
+          Подробнее {chevron_right}
+        </button>
       </div>
     </section>
   );

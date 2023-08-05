@@ -7,10 +7,10 @@ import CatalogCard from "../cards/catalogCard/catalogCard";
 export default function Catalog() {
   return (
     <section>
-      <div className={styles.container}>
+      <div className={`${styles.container} box`}>
         <div className={styles.section_top}>
           <p className="section_title">каталог продукции</p>
-          <Link href={"/catalog"} className="link">
+          <Link href={"/catalog"} className={`link ${styles.link}`}>
             Узнать больше {arrow_right}
           </Link>
         </div>
@@ -21,6 +21,9 @@ export default function Catalog() {
           <CatalogCard />
           <CatalogCard />
         </div>
+        <Link href={"/catalog"} className={`link ${styles.mobile_link}`}>
+          Узнать больше {arrow_right}
+        </Link>
       </div>
     </section>
   );

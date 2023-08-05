@@ -23,7 +23,7 @@ export default function Gallery() {
   const [prevEl, setPrevEl] = useState(null);
   const [nextEl, setNextEl] = useState(null);
   return (
-    <section className={styles.box}>
+    <section className={`box`}>
       <div className={`${styles.container}`}>
         <div className={styles.title_section}>
           <p className={`section_title ${styles.title}`}>Галерея</p>
@@ -47,26 +47,107 @@ export default function Gallery() {
             modules={[Autoplay, Pagination, Navigation]}
             breakpoints={{
               0: {
-                slidesPerView: 1.5,
-                spaceBetween: 0,
+                slidesPerView: 1.2,
+                spaceBetween: 10,
                 centeredSlides: true,
                 pagination: true,
               },
-              768: { slidesPerView: 3 },
-              1024: { slidesPerView: 4, pagination: false },
-              1440: { slidesPerView: 4 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3, pagination: false, spaceBetween: 16 },
+              1440: { slidesPerView: 3.5 },
+              1600: { slidesPerView: 4 },
               // 1300: { pagination: false },
             }}
             spaceBetween={24}
             slidesPerView={6}
             loop={true}
-            autoplay={{
-              delay: 6000,
-              disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //   delay: 6000,
+            //   disableOnInteraction: false,
+            // }}
             navigation={{ prevEl, nextEl }}
             className={`${styles.mySwiper} mySwiper`}
           >
+            <SwiperSlide>
+              <Link href={"/"} className={styles.gallery_card}>
+                <div className={styles.gallery_image}>
+                  <Image
+                    src="/media/about_pic.png"
+                    width={400}
+                    height={250}
+                    alt="hey"
+                    className={styles.image}
+                  />
+                </div>
+                <p className={styles.gallery_title}>
+                  Адаптер с внутренней резьбой / под ключ
+                </p>
+              </Link>
+            </SwiperSlide>{" "}
+            <SwiperSlide>
+              <Link href={"/"} className={styles.gallery_card}>
+                <div className={styles.gallery_image}>
+                  <Image
+                    src="/media/about_pic.png"
+                    width={400}
+                    height={250}
+                    alt="hey"
+                    className={styles.image}
+                  />
+                </div>
+                <p className={styles.gallery_title}>
+                  Адаптер с внутренней резьбой / под ключ
+                </p>
+              </Link>
+            </SwiperSlide>{" "}
+            <SwiperSlide>
+              <Link href={"/"} className={styles.gallery_card}>
+                <div className={styles.gallery_image}>
+                  <Image
+                    src="/media/about_pic.png"
+                    width={400}
+                    height={250}
+                    alt="hey"
+                    className={styles.image}
+                  />
+                </div>
+                <p className={styles.gallery_title}>
+                  Адаптер с внутренней резьбой / под ключ
+                </p>
+              </Link>
+            </SwiperSlide>{" "}
+            <SwiperSlide>
+              <Link href={"/"} className={styles.gallery_card}>
+                <div className={styles.gallery_image}>
+                  <Image
+                    src="/media/about_pic.png"
+                    width={400}
+                    height={250}
+                    alt="hey"
+                    className={styles.image}
+                  />
+                </div>
+                <p className={styles.gallery_title}>
+                  Адаптер с внутренней резьбой / под ключ
+                </p>
+              </Link>
+            </SwiperSlide>{" "}
+            <SwiperSlide>
+              <Link href={"/"} className={styles.gallery_card}>
+                <div className={styles.gallery_image}>
+                  <Image
+                    src="/media/about_pic.png"
+                    width={400}
+                    height={250}
+                    alt="hey"
+                    className={styles.image}
+                  />
+                </div>
+                <p className={styles.gallery_title}>
+                  Адаптер с внутренней резьбой / под ключ
+                </p>
+              </Link>
+            </SwiperSlide>{" "}
             <SwiperSlide>
               <Link href={"/"} className={styles.gallery_card}>
                 <div className={styles.gallery_image}>

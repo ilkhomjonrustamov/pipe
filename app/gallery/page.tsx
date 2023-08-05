@@ -13,7 +13,7 @@ export default function Gallery() {
         link={"/gallery"}
         link_name={"Галерея"}
       />
-      <div className={styles.al}>
+      <div className={`${styles.al} container`}>
         <div className={styles.categories_container}>
           <button className={styles.category}>Все Галерея</button>
           <button className={styles.category}>Фотогалерея</button>

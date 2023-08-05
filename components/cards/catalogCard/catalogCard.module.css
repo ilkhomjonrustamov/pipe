@@ -1,13 +1,3 @@
-.catalog_title {
-  color: var(--black, #020105);
-
-  /* Subtitle/Semibold */
-  font-family: var(--interface-semibold);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%; /* 33.6px */
-}
 .catalog {
   display: flex;
   align-items: flex-start;
@@ -18,6 +8,22 @@
   background: var(--white, #fff);
   padding: 24px;
   position: relative;
+  overflow: hidden;
+}
+.catalog_title {
+  color: var(--black, #020105);
+
+  /* Subtitle/Semibold */
+  font-family: var(--interface-semibold);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 33.6px */
+}
+
+.catalog svg {
+  width: 40px;
+  height: 40px;
 }
 .catalog > svg > path {
   stroke: black;
@@ -32,13 +38,23 @@
 .catalog:hover svg > path {
   stroke: white;
 }
-.image {
+.images {
   display: none;
   position: absolute;
-  bottom: -10px;
-  right: -10px;
+  bottom: -16px;
+  right: -16px;
+  z-index: 22;
+  width: 220px;
+  height: 190px;
 }
-.catalog:hover .image {
+.image image {
+}
+.image {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+.catalog:hover .images {
   display: flex;
 }
 .catalog:hover .ellipse {
@@ -54,4 +70,49 @@
   bottom: -10px;
   width: 220px;
   height: 190px;
+}
+@media (max-width: 1440px) {
+  .catalog_title {
+    color: var(--black, #020105);
+
+    /* Body 2/Semibold */
+    font-family: var(--interface-semibold);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 19.6px */
+  }
+}
+@media (max-width: 1024px) {
+  .catalog {
+    gap: 66px;
+
+    padding: 16px 14px 14px 14px;
+  }
+  .catalog_title {
+    color: var(--black, #020105);
+
+    /* Body 2/Semibold */
+    font-family: var(--interface-semibold);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 19.6px */
+  }
+  .catalog svg {
+    width: 20px;
+    height: 20px;
+  }
+  .images {
+    width: 122px;
+    height: 105px;
+    bottom: -10px;
+    right: -3px;
+  }
+  .ellipse {
+    display: none;
+  }
+  .catalog:hover .ellipse {
+    display: none;
+  }
 }

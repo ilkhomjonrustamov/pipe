@@ -15,7 +15,7 @@ export default function TopIntro({ title, link_name, link }: Props) {
           <div className={styles.topper}>
             <p className={styles.title}>{title}</p>
             <div className={styles.links}>
-              <Link href={"/"} className={styles.link}>
+              <Link href={"/"} className={styles.link_main}>
                 Главная
               </Link>
               <p>/</p>

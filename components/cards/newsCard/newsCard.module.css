@@ -3,7 +3,7 @@
   flex-direction: column;
   border: 2px solid var(--grey-8, #ebebeb);
   background: var(--white, #fff);
-  width: 402px;
+  width: 100%;
 }
 .image_container {
   overflow: hidden;
@@ -17,7 +17,7 @@
 .info {
   display: flex;
   flex-direction: column;
-  width: 402px;
+  /* max-width: 402px; */
   gap: 16px;
   padding: 24px;
   padding-top: 16px;
@@ -33,7 +33,7 @@
   font-weight: 800;
   line-height: 150%; /* 27px */
   text-transform: uppercase;
-  width: 354px;
+  /* max-width: 354px; */
   height: 80px;
   flex-shrink: 0;
 }

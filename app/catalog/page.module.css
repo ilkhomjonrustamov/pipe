@@ -1,8 +1,22 @@
 .catalogs {
-  max-width: 1680px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  padding: 88px 0 120px 0;
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 768px) {
+  .catalogs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding-bottom: 56px;
+  }
+}
+@media (max-width: 763px) {
+  .catalogs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }

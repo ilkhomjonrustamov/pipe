@@ -61,16 +61,36 @@
 .left svg {
   transform: rotate(180deg);
 }
+.image_container {
+  width: 100%;
+}
+.image {
+  width: 100%;
+  object-fit: cover;
+}
 @media (max-width: 880px) {
-  .navigation {
-    display: none;
+  .container {
+    gap: 18px;
   }
   .box {
-    padding: 0;
+    padding: 28px 0;
     border: unset;
   }
+  .left {
+    width: 20px;
+    height: 20px;
+  }
+  .right {
+    width: 20px;
+    height: 20px;
+  }
+  .right svg,
+  .left svg {
+    width: 20px;
+    height: 20px;
+  }
 
-  .title {
-    padding-left: 16px;
+  .title_section {
+    padding: 0 16px;
   }
 }

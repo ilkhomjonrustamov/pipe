@@ -47,13 +47,14 @@ export default function Partners() {
             breakpoints={{
               0: {
                 slidesPerView: 1.5,
-                spaceBetween: 0,
+                spaceBetween: 6,
                 centeredSlides: true,
                 pagination: true,
               },
               768: { slidesPerView: 3 },
               1024: { slidesPerView: 4, pagination: false },
-              1440: { slidesPerView: 6 },
+              1440: { slidesPerView: 5 },
+              1600: { slidesPerView: 6 }, 
               // 1300: { pagination: false },
             }}
             spaceBetween={10}
@@ -67,122 +68,90 @@ export default function Partners() {
             className={`${styles.mySwiper} mySwiper`}
           >
             <SwiperSlide>
-              <div>
+              <div className={styles.image_container}>
                 <Image
                   src="/media/partner.png"
                   width={262}
                   height={128}
                   alt="hey"
+                  className={styles.image}
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div>
+              <div className={styles.image_container}>
                 <Image
                   src="/media/partner.png"
                   width={262}
                   height={128}
                   alt="hey"
+                  className={styles.image}
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div>
+              <div className={styles.image_container}>
                 <Image
                   src="/media/partner.png"
                   width={262}
                   height={128}
                   alt="hey"
+                  className={styles.image}
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div>
+              <div className={styles.image_container}>
                 <Image
                   src="/media/partner.png"
                   width={262}
                   height={128}
                   alt="hey"
+                  className={styles.image}
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div>
+              <div className={styles.image_container}>
                 <Image
                   src="/media/partner.png"
                   width={262}
                   height={128}
                   alt="hey"
+                  className={styles.image}
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div>
+              <div className={styles.image_container}>
                 <Image
                   src="/media/partner.png"
                   width={262}
                   height={128}
                   alt="hey"
+                  className={styles.image}
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div>
+              <div className={styles.image_container}>
                 <Image
                   src="/media/partner.png"
                   width={262}
                   height={128}
                   alt="hey"
+                  className={styles.image}
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div>
+              <div className={styles.image_container}>
                 <Image
                   src="/media/partner.png"
                   width={262}
                   height={128}
                   alt="hey"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/media/partner.png"
-                  width={262}
-                  height={128}
-                  alt="hey"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/media/partner.png"
-                  width={262}
-                  height={128}
-                  alt="hey"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/media/partner.png"
-                  width={262}
-                  height={128}
-                  alt="hey"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/media/partner.png"
-                  width={262}
-                  height={128}
-                  alt="hey"
+                  className={styles.image}
                 />
               </div>
             </SwiperSlide>

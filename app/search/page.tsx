@@ -12,11 +12,7 @@ export default function Cart() {
       />
       <div className={styles.container}>
         <div className={styles.search_cont}>
-          <input
-            type="text"
-            placeholder={`Поиск ${search}`}
-            className={styles.search}
-          />
+          <input type="text" placeholder={`Поиск `} className={styles.search} />
         </div>
         <div className={styles.noresult_container}>
           <p className={styles.noresult_title}>

@@ -21,7 +21,7 @@ export default function Contacts() {
         link_name={"Контакты"}
       />
       <section>
-        <div className={styles.container}>
+        <div className={`${styles.container} box`}>
           <div className={styles.left}>
             <div className={styles.map}>
               <iframe

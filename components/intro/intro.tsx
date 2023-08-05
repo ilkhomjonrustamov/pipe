@@ -22,7 +22,7 @@ export default function Intro() {
             </p>
           </div>
           <Image
-            src="/media/intro_top_back.png"
+            src="/media/mheading.png"
             className={styles.image}
             width={236}
             height={236}
@@ -48,7 +48,7 @@ export default function Intro() {
           <div className={styles.middle_info}>
             <p className={styles.middle_subtitle}>
               Ассортимент из полимерных, ПВХ и полиэтиленовых труб различного
-              назначения.
+              назначения.         
             </p>
             <button className="primary_btn">О компании {chevron_right} </button>
           </div>
