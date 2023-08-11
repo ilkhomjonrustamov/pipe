@@ -28,9 +28,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/[lang]/gallery/gallery.js",
-    "app/[lang]/components/table/columns.js",
-    "app/[lang]/components/table/table.js"
-  ],
+    "app/[locale]/gallery/gallery.js",
+    "app/[locale]/components/table/columns.js",
+    "app/[locale]/components/table/table.js"
+, "app/[locale]/components/modal/modal.js"  ],
   "exclude": ["node_modules"]
 }

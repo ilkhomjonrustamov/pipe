@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.0",
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
@@ -22,6 +23,7 @@
     "imask": "^7.1.3",
     "negotiator": "^0.6.3",
     "next": "^13.4.11",
+    "next-intl": "^3.0.0-beta.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-imask": "^7.1.3",

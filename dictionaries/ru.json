@@ -1,6 +1,0 @@
-{
-  "welcome": {
-    "helloWorld": "Hello privet!",
-    "happyYear": "Huea {{ year }}!"
-  }
-}
